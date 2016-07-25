@@ -1,0 +1,31 @@
+{
+  "name": "Eventro Back-end (Node + Firebase + Parse)",
+  "description": "A barebones Node.js app using Express 4, Parse SDK and Firebase Library",
+  "repository": "https://anasok@bitbucket.org/anasok/node-firebase-parse.git",
+  "logo": "https://avatars0.githubusercontent.com/u/1294580?v=3&s=200",
+  "keywords": ["node", "express", "static", "Firebase", "Parse"],
+  "firebaseUrl":"https://eventro.firebaseio.com",
+  "PARSE_APP_ID":"EWVn1O9MYRPjbTmwXKnGH3Vht52wQ5Mw7JeNsGt9",
+  "PARSE_JS_KEY":"hLoKp2cKgOCL5i9qlAvohVufb6xNk6OYAfMMSvHx",
+  "PARSE_MASTER_KEY":"fvflekc06v0QHyWtE3zYiDzlh6gpZA0U6IP8j36W",
+  "env": {
+    "PARSE_MOUNT": {
+      "description": "Configure Parse API route.",
+      "value": "/parse"
+    },
+    "APP_ID": {
+      "description": "A unique identifier for your app.",
+      "value": "myAppId"
+    },
+    "MASTER_KEY": {
+      "description": "A key that overrides all permissions. Keep this secret.",
+      "value": "myMasterKey"
+    },
+    "SERVER_URL": {
+      "description": "URL to connect to your Heroku instance (update with your app's name + PARSE_MOUNT)",
+      "value": "http://yourappname.herokuapp.com/parse"
+    }
+  },
+  "image": "heroku/nodejs",
+  "addons": ["mongolab"]
+}
